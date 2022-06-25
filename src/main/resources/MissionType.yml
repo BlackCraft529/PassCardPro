@@ -1,0 +1,114 @@
+任务类型:
+  CONSUME:
+    Type格式: CONSUME_物品类型.
+    Require格式: 无符号正整数.
+    备注: 当玩家消耗完物品时, 此任务将触发 例如:(食物, 药水, 牛奶桶).√
+    可用参数: 使用/pcp itemType获取手中物品类型.
+  RIPTIDE:
+    Type格式: RIPTIDE.
+    Require格式: 无符号正整数.
+    备注: 当玩家在使用三叉戟上的激流附魔推动它们在空中飞行(需要在雨天才能在空中飞行)时触发本任务.√
+  SHEAR:
+    Type格式: SHEAR_实体类型.
+    Require格式: 无符号正整数.
+    备注: 玩家使用剪刀采集羊毛，雪傀儡，哞牛到达一定次数视为完成一次.√
+    可用参数: 使用/pcp clicker查看相应生物类型.
+  KILLE:
+    Type格式: KILLE_怪物名关键字.
+    Require格式: 无符号正整数.
+    备注: 击杀相应名称中包含关键字的怪物视为完成一次.√
+    可用参数: 任意自定义字符
+  KILL:
+    Type格式: KILL_怪物类型.
+    Require格式: 无符号正整数.
+    备注: 击杀相应类型的怪物视为完成一次.√
+    可用参数:
+  CHAT:
+    Type格式: CHAT.
+    Require格式: 正整数.
+    备注: 发言到相应次数视为完成一次.√
+  DAMAGE:
+    Type格式: DAMAGE_怪物名关键字.
+    Require格式: 正数,可以是小数.
+    备注: 对名字中包含关键字的怪物造成了指定伤害视为完成一次.√
+    可用参数: 任意自定义字符.
+  DAMAGETIME:
+    Type: DAMAGETIME_怪物名关键字
+    Require格式: 正整数.
+    备注: 对名字中包含关键字的怪物造成攻击伤害的次数,到达需求即视为完成一次.√
+    可用参数: 任意自定义字符.
+  POKEMON:
+    注意: 需要[Pixelmon]拓展.
+    类型以及详解:
+      CANDYE:
+        Require格式: 正整数
+        备注: 使用任意稀有糖果完成一次.√
+      BEATTRAINER:
+        Require格式: 正整数
+        备注: 击败训练师可完成一次.√
+      CATCHE:
+        Require格式: 正整数
+        备注: 捕捉任意宝可梦即可完成一次.√
+      CATCH_宝可梦ID:
+        Require格式: 正整数
+        备注: 捕捉指定宝可梦即可完成一次.√
+      POKEMON_PVP:
+        Require格式: 正整数.
+        备注: 完成一次PVP,即宝可梦双人对战即视为完成一次,不计算失败胜利.√
+      POKEMON_PVP_WIN:
+        Require格式: 正整数.
+        备注: 完成一次PVP,即宝可梦双人对战胜利即视为完成一次.√
+      POKEMON_PVP_FAIL:
+        Require格式: 正整数.
+        备注: 完成一次PVP,即宝可梦双人对战失败即视为完成一次.√
+      POKEMON_PVE:
+        Require格式: 正整数.
+        备注: 完成一次PVE,即对战野生精灵一次,不计算失败胜利.√
+      POKEMON_PVE_WIN:
+        Require格式: 正整数.
+        备注: 完成一次PVE,对战野生精灵一次胜利即视为完成一次.√
+      POKEMON_PVE_FAIL:
+        Require格式: 正整数.
+        备注: 完成一次PVE,对战野生精灵一次失败即视为完成一次.√
+  COLLECT:
+    Type格式: COLLECT_物品英文ID.
+    Require格式: 正整数.
+    备注: 收集/拾取到相应数量物品视为完成一次.√
+    可用参数: 任意物品英文ID
+    警告:
+      问题: 存在一个物品反复拾取/丢弃刷任务的问题.
+      解决方法: 使用击杀或破坏类任务代替或设置数量较大即可.
+  DROP:
+    Type格式: DROP_物品英文ID.
+    Require格式: 正整数.
+    备注: 丢弃到相应数量物品视为完成一次.√
+    可用参数: 任意物品英文ID
+    警告:
+      问题: 存在一个物品反复拾取/丢弃刷任务的问题.
+      解决方法: 使用击杀或破坏类任务代替.
+  DESTROY:
+    Type格式: DESTROY_方块英文ID.
+    Require格式: 正整数.
+    备注: 破坏相应数量方块视为完成一次.√
+    可用参数:
+  COMMAND:
+    Type格式: COMMAND_指令头.
+    Require格式: 正整数.
+    备注: 使用相应的指令头的指令视为完成一次.√
+    可用参数: 任意注册指令.
+  DOUBLEJUMP:
+    Type格式: DOUBLEJUMP.
+    Require格式: 正整数.
+    备注: 双跳跃(双击空格,建议添加相应功能插件)次数到达相应次数视为完成一次.√
+  KILLPLAYER:
+    Type格式: KILLPLAYER.
+    Require格式: 正整数.
+    备注: 击杀玩家到达指定数量视为完成一次.√
+  DAMAGEPLAYER:
+    Type格式: DAMAGEPLAYER.
+    Require格式: 正数,可以是小数.
+    备注: 对玩家造成指定伤害视为完成一次.√
+  ITEMBREAK:
+    Type格式: ITEMBREAK_物品英文ID
+    Require格式: 正整数
+    备注: 将工具耐久使用至0(损坏)则视为完成一次.√

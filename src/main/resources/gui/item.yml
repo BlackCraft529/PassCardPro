@@ -1,0 +1,91 @@
+glass_yellow:
+  ==: org.bukkit.inventory.ItemStack
+  type: STAINED_GLASS_PANE
+  damage: 4
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §f
+up:
+  ==: org.bukkit.inventory.ItemStack
+  type: RED_ROSE
+  damage: 8
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §e§l上一页
+down:
+  ==: org.bukkit.inventory.ItemStack
+  type: RED_ROSE
+  damage: 2
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §b§l下一页
+glass_red:
+  ==: org.bukkit.inventory.ItemStack
+  type: STAINED_GLASS_PANE
+  damage: 14
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §f
+take:
+  ==: org.bukkit.inventory.ItemStack
+  type: DOUBLE_PLANT
+  damage: 4
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §c§l领取所有奖励
+missionInfo:
+  ==: org.bukkit.inventory.ItemStack
+  type: BOOK
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §6§l任务详情
+top:
+  ==: org.bukkit.inventory.ItemStack
+  type: GOLDEN_APPLE
+  damage: 1
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §6§l等级排行榜TOP10
+award:
+  ==: org.bukkit.inventory.ItemStack
+  type: DIAMOND
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §d§l通行证奖励
+playerInfo:
+  ==: org.bukkit.inventory.ItemStack
+  type: NETHER_STAR
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §b§l个人信息
+missionInfoPre:
+  ==: org.bukkit.inventory.ItemStack
+  type: PAPER
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §e查看任务
+randomMission:
+  ==: org.bukkit.inventory.ItemStack
+  type: PAPER
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §d个人随机任务
+seasonInfo:
+  ==: org.bukkit.inventory.ItemStack
+  v: 2230
+  type: BOOK
+  meta:
+    ==: ItemMeta
+    meta-type: UNSPECIFIC
+    display-name: §b§l赛季信息

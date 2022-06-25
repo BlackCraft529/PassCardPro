@@ -1,0 +1,93 @@
+#MySql数据库设置
+MySql:
+  #是否使用数据库，设置为false则使用本地yml存储数据
+  UseSql: false
+  DatabaseName: pcdata
+  UserName: root
+  Password: 123456
+  Port: 3306
+  Ip: localhost
+#应用的语言文件
+Language: zh_CN
+#是否开始双跳任务以及监听支持（双跳可能不兼容部分插件）
+DoubleJump: true
+#每周最大点数
+WeekMaxPoint:
+  Default: 1000
+  Vip: 1500
+#刷新间隔-单位：秒
+Refresh: 3
+#PapiHook的方式，老版本请写1 ，如果hook失败请写2
+Papi: 2
+#任务是否设置完成
+#请在确保任务数量>=9且有三个随机任务后手动改为true，否则会出现报错等问题
+Mission:
+  Complete: false
+  #玩家三个随机任务数据更新方式： #daily-每日   #weekly-每周
+  Refresh: "daily"
+  #提示方式:
+  Notice:
+    #TiTle提示
+    Title: true
+    #消息提示
+    Msg: false
+#拥有该权限将不会被阻止飞行
+Permission:
+  Fly: "essentials.fly"
+#界面设置
+Gui:
+  Award:
+    Title: "§c§l通行证奖励"
+    #排行机制： 等级+点数 等级优先>点数优先
+    TopDesc: "§eTop.<top> §a<player> §9(§d<level>级§e<point>点§9)"
+    SeasonDesc:
+      - "§e§l <seasonName>"
+      - "§b§l>> §e赛季持续时间:"
+      - "    §8▶ <continue>"
+      - " "
+      - "§b§l>> §d赛季开始日期:"
+      - "    §8▶ <startDay>"
+      - " "
+      - "§b§l>> §c剩余时间:"
+      - "    §8▶ <leftDay>"
+  Menu:
+    Title: "§bPassCardPro通行证"
+    Vip: "§9[§6§l进阶§9]"
+    Default: "§9[§a普通§9]"
+    Desc:
+      - "§b§l>> <player> <vip>"
+      - "§b§l>> §a通行证等级:"
+      - "    §8▶ <level>"
+      - " "
+      - "§b§l>> §d当前点数:"
+      - "    §8▶ <point>"
+      - " "
+      - "§b§l>> §c本周点数:"
+      - "    §8▶ <weekPoint>/<maxWeekPoint>"
+      - " "
+      - "§b§l>> §6奖励领取状态(个数):"
+      - "    §8▶ &a普通奖励: §e<defaultGets>"
+      - "    §8▶ §d进阶奖励: §e<vipGets>"
+      - " "
+      - "§b§l>> §d升级还需:"
+      - "    §8▶ §e<nextLevelNeedPoint> §a点"
+  Mission:
+    Title: "§e§l任务详情"
+    Finish: "§9[§b§l已完成!§9]"
+    Continue: "§9[§a§l进行中...§9]"
+    Desc:
+      - "§b§l>> §a任务:"
+      - "    §8▶ <missionName>"
+      - "    §8▶ <missionDesc>"
+      - " "
+      - "§b§l>> §e任务进度:"
+      - "    §8▶ <rate>/<require>"
+      - " "
+      - "§b§l>> §e任务完成次数/最大完成次数:"
+      - "    §8▶ <finishTime>/<maxTime>"
+      - " "
+      - "§b§l>> §e奖励点数:"
+      - "    §8▶ <givenPoint>"
+      - " "
+      - "§b§l>> §d编号:"
+      - "    §8♦ <missionId>"

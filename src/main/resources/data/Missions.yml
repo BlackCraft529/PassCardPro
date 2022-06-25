@@ -1,0 +1,15 @@
+Mission-1:
+  #任务展示名
+  Name: "§a测试任务1"
+  #任务类型：查看MissionType.yml
+  Type: CHAT
+  #任务需求：查看MissionType.yml
+  Require: 35
+  #完成后给予的点数
+  GivenPoint: 100
+  #每周最大完成次数
+  MaxTime: 5
+  #任务描述
+  Desc: '&b测试描述'
+  #是否为随机任务
+  Random: true

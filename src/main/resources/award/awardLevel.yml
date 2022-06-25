@@ -1,0 +1,51 @@
+#等级
+1:
+  #普通玩家奖励
+  Default:
+    #显示在界面上的物品代号，如果不想开启这个奖励，将Display行整行删除即可
+    Display: skin
+    #领取后执行的指令
+    Command:
+      - 'eco give <player> 1000'
+    #给予的物品，也在award/item.yml中保存
+    Item: []
+  #进阶奖励
+  Vip:
+    Display: skin
+    Command:
+      - 'eco give <player> 5000'
+    Item:
+      - skin
+      - skin
+    #当前奖励的描述，若无则删除此项。插件会优先应用此处的lore
+    Lore:
+      - ''
+  #到达该等级需要的点数,到达后即扣除
+  Point: 10
+2:
+  Default:
+    Display: rabbit_meat
+    Command:
+      - 'eco give <player> 1000'
+    Item:
+      - rabbit_meat
+  Vip:
+    Display: rabbit_meat
+    Command:
+      - 'eco give <player> 5000'
+    Item:
+      - rabbit_meat
+  Point: 50
+3:
+  Default:
+    Display: rabbit_skin
+    Command:
+      - 'eco give <player> 1000'
+    Item: []
+  Vip:
+    Display: rabbit_skin
+    Command:
+      - 'eco give <player> 5000'
+    Item:
+      - rabbit_skin
+  Point: 100

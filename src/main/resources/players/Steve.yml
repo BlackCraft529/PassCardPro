@@ -1,0 +1,50 @@
+Name: "Steve"
+Data:
+  Level: 0
+  WeekPoint: 0
+  Point: 0
+  WeekId: "..."
+  Date: "……"
+  Vip: false
+  Gets:
+    Default: '0,'
+    Vip: '0,'
+UUID: "..."
+RandomMission:
+  Mission1:
+    Id: "test1"
+    Rate: 2
+    Complete: 0
+  Mission2:
+    Id: "test2"
+    Rate: 1
+    Complete: 0
+  Mission3:
+    Id: "test3"
+    Rate: 4
+    Complete: 0
+Mission:
+  1:
+    Id: "test1"
+    Complete: 1
+    Rate: 3
+  2:
+    Id: "test1"
+    Complete: 1
+    Rate: 3
+  3:
+    Id: "test1"
+    Complete: 1
+    Rate: 3
+  4:
+    Id: "test1"
+    Complete: 1
+    Rate: 3
+  5:
+    Id: "test1"
+    Complete: 1
+    Rate: 3
+  6:
+    Id: "test1"
+    Complete: 1
+    Rate: 3

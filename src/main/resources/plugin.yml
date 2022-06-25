@@ -1,0 +1,16 @@
+name: PassCard-Pro
+main: com.bc.passcardpro.PassCard
+version: 1.3.2
+author: SCT.Luckily_Baby
+description: "PassCardPro通行证(MC版本1.12.2-.1.16.1)"
+depend: [PlaceholderAPI]
+commands:
+  passcardpro:
+  pcp:
+permissions:
+  pcp.admin:
+    default: op
+    children:
+      pc.open: true
+  pcp.open:
+    default: true

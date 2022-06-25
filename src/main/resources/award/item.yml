@@ -1,0 +1,9 @@
+skin:
+  ==: org.bukkit.inventory.ItemStack
+  type: LEATHER
+rabbit_meat:
+  ==: org.bukkit.inventory.ItemStack
+  type: RABBIT
+rabbit_skin:
+  ==: org.bukkit.inventory.ItemStack
+  type: RABBIT_HIDE
